@@ -9,9 +9,12 @@ export default function Home() {
             <Hero bg="/image/banjihagames-logo.png" titleLines={["반지하게임즈는","독창적이고, 용기를 가지고, 재미있게 일합니다!"]} downloads="1,850,000" />
 
             <About
-                title="About"
-                tagline="아류로 성공하느니 오리지널로 망하자!"
-                description="반지하게임즈는 2017년도에 설립된 인디 게임 스타트업으로, 반지하게임즈의 원동력인 반지하 자취방에서 즐겁게 게임을 만들던 초심을 잊지 말자는 뜻을 담고 있습니다."
+                tagline="ABOUT"
+                title1="아류로 성공하느니"
+                title2="오리지널로 망하자!"
+                description1="반지하게임즈는 2017년도에 설립된 인디 게임 스타트업으로,"
+                description2="반지하게임즈의 원동력인 반지하 자취방에서 즐겁게 게임을"
+                description3="만들던 초심을 잊지 말자는 뜻을 담고 있습니다."
             />
 
             <Games games={[

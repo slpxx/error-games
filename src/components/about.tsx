@@ -1,26 +1,41 @@
 import React from "react";
 
 type AboutProps = {
-    title: string;
+    title1: string;
+    title2: string;
     tagline: string;
-    description: string;
+    description1: string;
+    description2: string;
+    description3: string;
 };
 
-export default function About({ title, tagline, description }: AboutProps) {
+export default function About({ tagline, title1, title2, description1, description2, description3 }: AboutProps) {
     return (
-        <section id="about" className="min-h-screen flex items-center justify-center py-20">
-            <div className="max-w-4xl px-6 text-center">
-                {/* 타이틀 */}
-                <h2 className="text-4xl md:text-5xl font-bold mb-12">{title}</h2>
-
-                {/* 슬로건 */}
-                <p className="text-2xl md:text-3xl font-semibold mb-8 leading-snug">
+        <section id="about" className="items-center justify-center py-5">
+            <div id="title-container" className="max-w-4xl mx-auto flex flex-col py-4 px-6">
+                <p className="text-2xl md:text-3xl font-semibold mb-6 text-left">
                     {tagline}
                 </p>
 
+                <div className="text-center">
+                    <h2 className="text-6xl font-bold">
+                        {title1}
+                    </h2>
+                    <h2 className="text-6xl font-bold">
+                        {title2}
+                    </h2>
+                </div>
+            </div>
+            <div className="flex flex-col items-center justify-center py-4">
                 {/* 설명 */}
-                <p className="text-lg md:text-xl leading-relaxed">
-                    {description}
+                <p className="text-lg">
+                    {description1}
+                </p>
+                <p className="text-lg">
+                    {description2}
+                </p>
+                <p className="text-lg">
+                    {description3}
                 </p>
             </div>
         </section>
