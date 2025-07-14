@@ -12,7 +12,7 @@ type GamesProps = {
 
 export default function Games({ games }: GamesProps) {
     return (
-        <section id="games" className="min-h-screen py-20 bg-[#0c0c0c] text-white">
+        <section id="games" className="min-h-screen py-20">
             <div className="max-w-6xl mx-auto px-6">
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Games</h2>
 
@@ -27,8 +27,6 @@ export default function Games({ games }: GamesProps) {
                                 alt={game.title}
                                 className="w-full h-64 object-cover brightness-90 group-hover:brightness-75 transition duration-300"
                             />
-
-                            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-60 transition duration-300" />
 
                             <div className="absolute bottom-0 left-0 p-4 z-10">
                                 <h3 className="text-xl font-bold mb-1">{game.title}</h3>

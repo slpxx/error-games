@@ -19,7 +19,7 @@ export default function About({ title, tagline, description }: AboutProps) {
                 </p>
 
                 {/* 설명 */}
-                <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                <p className="text-lg md:text-xl leading-relaxed">
                     {description}
                 </p>
             </div>

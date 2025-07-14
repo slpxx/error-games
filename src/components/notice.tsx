@@ -11,7 +11,7 @@ type NoticeProps = {
 
 export default function Notice({ contacts }: NoticeProps) {
     return (
-        <section id="notice" className="min-h-screen flex flex-col justify-center items-center py-20 bg-black text-white">
+        <section id="notice" className="min-h-screen flex flex-col justify-center items-center py-20">
             <div className="max-w-4xl w-full px-6 text-center">
                 <h2 className="text-4xl md:text-5xl font-bold mb-12">NOTICE</h2>
 
@@ -21,7 +21,7 @@ export default function Notice({ contacts }: NoticeProps) {
                             <h3 className="text-xl font-semibold mb-2">{contact.label}</h3>
                             <a
                                 href={`mailto:${contact.email}`}
-                                className="text-lg text-gray-300 hover:text-white transition-colors duration-200"
+                                className="text-lg"
                             >
                                 {contact.email}
                             </a>
