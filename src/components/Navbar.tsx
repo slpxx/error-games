@@ -1,17 +1,6 @@
-'use client';
-
-import { useEffect, useState } from 'react';
+"use client"
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        const onScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-        };
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
 
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
@@ -33,9 +22,9 @@ const Navbar = () => {
 
                 {/* 메뉴 */}
                 <div className="space-x-8 hidden md:flex text-sm font-medium">
-                    <button onClick={() => scrollToSection('about')}>ABOUT</button>
-                    <button onClick={() => scrollToSection('games')}>GAMES</button>
-                    <button onClick={() => scrollToSection('contact')}>CONTACT</button>
+                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('about')}>ABOUT</button>
+                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('games')}>GAMES</button>
+                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('contact')}>CONTACT</button>
                 </div>
             </div>
         </nav>
