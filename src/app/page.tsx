@@ -6,7 +6,7 @@ import Notice from "@/components/notice";
 export default function Home() {
     return (
         <div className="font-sans scroll-smooth">
-            <Hero bg="/bg-hero.jpg" titleLines={["반지하게임즈는","독창적이고, 용기를 가지고, 재미있게 일합니다!"]} downloads="1,850,000" />
+            <Hero bg="/image/banjihagames-logo.png" titleLines={["반지하게임즈는","독창적이고, 용기를 가지고, 재미있게 일합니다!"]} downloads="1,850,000" />
 
             <About
                 title="About"
