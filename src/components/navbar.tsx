@@ -17,14 +17,14 @@ const Navbar = () => {
                     className="text-xl font-bold cursor-pointer"
                     onClick={() => scrollToSection('hero')}
                 >
-                    Error Games
+                    Error
                 </div>
 
                 {/* 메뉴 */}
                 <div className="space-x-8 hidden md:flex text-sm font-medium">
-                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('about')}>ABOUT</button>
-                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('games')}>GAMES</button>
-                    <button className="hover:cursor-pointer" onClick={() => scrollToSection('contact')}>CONTACT</button>
+                    <button className="hover:cursor-pointer font-bold" onClick={() => scrollToSection('about')}>ABOUT</button>
+                    <button className="hover:cursor-pointer font-bold" onClick={() => scrollToSection('games')}>GAMES</button>
+                    <button className="hover:cursor-pointer font-bold" onClick={() => scrollToSection('notice')}>NOTICE</button>
                 </div>
             </div>
         </nav>
