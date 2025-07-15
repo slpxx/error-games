@@ -11,7 +11,7 @@ type NoticeProps = {
 
 export default function Notice({ contacts }: NoticeProps) {
     return (
-        <section id="notice" className="min-h-screen flex flex-col justify-center items-center py-20">
+        <section id="notice" className="min-h-screen flex flex-col justify-center items-center">
             <div className="max-w-4xl w-full px-6 text-center">
                 <h2 className="text-4xl md:text-5xl font-bold mb-12">NOTICE</h2>
 

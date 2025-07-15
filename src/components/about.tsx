@@ -11,7 +11,7 @@ type AboutProps = {
 
 export default function About({ tagline, title1, title2, description1, description2, description3 }: AboutProps) {
     return (
-        <section id="about" className="items-center justify-center py-5">
+        <section id="about" className="min-h-screen flex flex-col items-center justify-center">
             <div id="title-container" className="max-w-4xl mx-auto flex flex-col py-4 px-6">
                 <p className="text-2xl md:text-3xl font-semibold mb-6 text-left">
                     {tagline}
