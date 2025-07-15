@@ -2,11 +2,12 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Games from "@/components/games";
 import Notice from "@/components/notice";
+import React from "react";
 
 export default function Home() {
     return (
         <div className="scroll-smooth">
-            <Hero bg="/image/banjihagames-logo.png" titleLines={["반지하게임즈는","독창적이고, 용기를 가지고, 재미있게 일합니다!"]} downloads="1,850,000" />
+            <Hero bg="/image/banjihagames-logo.png" title1="반지하게임즈는" title2="독창적이고, 용기를 가지고, 재미있게 일합니다!" downloads="1,850,000" />
 
             <About
                 tagline="ABOUT"
