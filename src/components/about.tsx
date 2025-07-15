@@ -12,6 +12,7 @@ type AboutProps = {
 export default function About({ tagline, title1, title2, description1, description2, description3 }: AboutProps) {
     return (
         <section id="about" className="min-h-screen flex flex-col items-center justify-center">
+            {/* 타이틀 */}
             <div id="title-container" className="max-w-4xl mx-auto flex flex-col py-4 px-6">
                 <p className="text-2xl md:text-3xl font-semibold mb-6 text-left">
                     {tagline}
@@ -26,8 +27,8 @@ export default function About({ tagline, title1, title2, description1, descripti
                     </h2>
                 </div>
             </div>
+            {/* 설명 */}
             <div className="flex flex-col items-center justify-center py-4">
-                {/* 설명 */}
                 <p className="text-lg">
                     {description1}
                 </p>
