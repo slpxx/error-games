@@ -19,8 +19,9 @@ export default function Home() {
             />
 
             <Games games={[
-                { title: "서울 2033", img: "/games/seoul2033.jpg", desc: "디스토피아 RPG" },
-                { title: "주사위 제국", img: "/games/dice-empire.jpg", desc: "턴제 전략" },
+                { title: "수확의 정석", img: "/image/farm_stone.png"},
+                { title: "서울 2033", img: "/image/seoul-2033.png"},
+                { title: "서울 2033:후원자", img: "/image/seoul-2033-sponsor.png"},
                 // TODO 추가 게임...
             ]} />
 
