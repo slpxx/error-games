@@ -1,5 +1,3 @@
-import React from "react";
-
 type AboutProps = {
     title1: string;
     title2: string;

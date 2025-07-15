@@ -1,5 +1,3 @@
-import React from "react";
-
 type Game = {
     title: string;
     img: string;

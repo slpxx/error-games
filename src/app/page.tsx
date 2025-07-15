@@ -24,10 +24,7 @@ export default function Home() {
                 // TODO 추가 게임...
             ]} />
 
-            <Notice contacts={[
-                { label: "비즈니스 문의", email: "contact@errorgames.com" },
-                { label: "개발팀 연락처", email: "dev@errorgames.com" }
-            ]} />
+            <Notice />
         </div>
     );
 }
