@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import DustCanvas from "@/components/DustCanvas";
 
 
 export const metadata: Metadata = {
@@ -17,7 +18,8 @@ export default function RootLayout({
       <html lang="ko">
         <body className="bg-black text-white">
           <Navbar />
-          {children}
+          <DustCanvas />
+              {children}
           <footer className="m-20 space-y-10">
               <div className="flex flex-col items-center justify-center text-center space-y-1">
                   <p className="font-bold text-lg mb-2">
