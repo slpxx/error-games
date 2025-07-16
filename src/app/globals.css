@@ -22,3 +22,31 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes rainbow-text {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.rainbow-text {
+  background: linear-gradient(
+          90deg,
+          #c7301e 0%,
+          #c7c959 10%,
+          #1c932e 20%,
+          #4aa3a9 30%,
+          #595aa5 40%,
+          #b81043 50%,
+          #1c3a03 60%,
+          #52af9c 70%,
+          #4eaa4c 80%,
+          #96301e 90%,
+          #c7c959 100%
+  );
+  background-size: 1000% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 20s linear infinite;
+}
