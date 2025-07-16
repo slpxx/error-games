@@ -1,10 +1,6 @@
 import Image from "next/image";
 import FadeIn from "@/components/fadeIn";
-
-type Game = {
-    title: string;
-    img: string;
-};
+import {Game} from "@/data/data";
 
 type GamesProps = {
     games: Game[];
@@ -28,7 +24,7 @@ export default function Games({ games }: GamesProps) {
                             >
                                 <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-xl overflow-hidden shadow-md group">
                                     <Image
-                                        src={game.img}
+                                        src={game.image}
                                         alt={game.title}
                                         fill
                                         className="object-cover transition duration-300"

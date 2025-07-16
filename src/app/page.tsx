@@ -3,6 +3,7 @@ import About from "@/components/about";
 import Games from "@/components/games";
 import Notice from "@/components/notice";
 import React from "react";
+import {gameList} from "@/data/data";
 
 export default function Home() {
     return (
@@ -18,12 +19,7 @@ export default function Home() {
                 description3="만들던 초심을 잊지 말자는 뜻을 담고 있습니다."
             />
 
-            <Games games={[
-                { title: "수확의 정석", img: "/image/farm_stone.png"},
-                { title: "서울 2033", img: "/image/seoul-2033.png"},
-                { title: "서울 2033:후원자", img: "/image/seoul-2033-sponsor.png"},
-                // TODO 추가 게임...
-            ]} />
+            <Games games={gameList} />
 
             <Notice />
         </div>
