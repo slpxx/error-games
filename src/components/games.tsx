@@ -8,7 +8,7 @@ type GamesProps = {
 
 export default function Games({ games }: GamesProps) {
     return (
-        <section id="games" className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+        <section id="games" className="min-h-screen flex flex-col items-center justify-center">
             <FadeIn>
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">GAMES</h2>
