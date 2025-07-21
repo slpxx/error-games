@@ -21,7 +21,7 @@ export default function Home() {
 
             <Games games={gameList} />
 
-            <Notice />
+            <Notice/>
         </div>
     );
 }
