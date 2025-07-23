@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "@/components/fadeIn";
 
 export default function Notice() {
@@ -15,10 +16,13 @@ export default function Notice() {
               href="https://x.com/_ErrorGames_"
               className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
             >
-              <img
+              <Image
                 src="/icons/X_logo.png"
-                alt="X (Twitter)"
-                className="absolute top-6 left-6 w-8 h-8"
+                alt="X Logo"
+                width={32}
+                height={32}
+                className="absolute top-6 left-6"
+                priority
               />
 
               <div className="relative mt-2 text-left">
@@ -34,10 +38,13 @@ export default function Notice() {
               href="https://www.instagram.com/errorgamescom/"
               className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
             >
-              <img
+              <Image
                 src="/icons/Instagram_logo.png"
-                alt="Instagram"
-                className="absolute top-6 left-6 w-8 h-8"
+                alt="X Logo"
+                width={32}
+                height={32}
+                className="absolute top-6 left-6"
+                priority
               />
 
               <div className="relative mt-2 text-left">
@@ -53,10 +60,13 @@ export default function Notice() {
               href="https://www.youtube.com/@errorgames403"
               className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
             >
-              <img
+              <Image
                 src="/icons/YouTube_logo.png"
-                alt="YouTube"
-                className="absolute top-6 left-6 w-8 h-8"
+                alt="X Logo"
+                width={32}
+                height={32}
+                className="absolute top-6 left-6"
+                priority
               />
 
               <div className="relative mt-2 text-left">
