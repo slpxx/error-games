@@ -12,9 +12,6 @@ export default function Games({ games }: GamesProps) {
             <FadeIn>
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">GAMES</h2>
-                    <p className="text-center mb-12 text-lg font-medium">
-                        반지하게임즈의 다양한 게임을 만나 보세요.
-                    </p>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10">
                         {games.map((game, i) => (

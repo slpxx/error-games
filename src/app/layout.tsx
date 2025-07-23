@@ -5,8 +5,8 @@ import DustCanvas from "@/components/DustCanvas";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-    title: "Error Games",
-    description: "에러 게임즈 웹사이트",
+    title: "ERROR Co.,Ltd.",
+    description: "ERROR Co.,Ltd. Website",
 };
 
 export default function RootLayout({

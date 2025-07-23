@@ -8,6 +8,17 @@ export type Game = {
 
 export const gameList: Game[] = [
     {
+        id: 'NyanNyanPo',
+        title: '냥냥포',
+        image: '/image/NyanNyanPo.png',
+        appStore: null,
+        playStore: 'https://play.google.com/store/apps/details?id=com.error.grandma&hl=ko',
+    },
+];
+
+/*
+export const gameList: Game[] = [
+    {
         id: 'seoul2033',
         title: '서울 2033',
         image: '/image/seoul-2033.png',
@@ -29,3 +40,4 @@ export const gameList: Game[] = [
         playStore: 'https://play.google.com/store/apps/details?id=com.semibasement.jaquanpaik.joongrous_peaceland&hl=ko',
     },
 ];
+*/
