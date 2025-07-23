@@ -14,6 +14,13 @@ export const gameList: Game[] = [
         appStore: null,
         playStore: 'https://play.google.com/store/apps/details?id=com.error.grandma&hl=ko',
     },
+    {
+        id: 'DungeonPool',
+        title: '출시 예정',
+        image: '/image/DungeonPool.png',
+        appStore: null,
+        playStore: null,
+    },
 ];
 
 /*

@@ -5,8 +5,11 @@ import DustCanvas from "@/components/DustCanvas";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-    title: "ERROR Co.,Ltd.",
-    description: "ERROR Co.,Ltd. Website",
+  title: "ERROR Co.,Ltd.",
+  description: "ERROR Co.,Ltd. Website",
+  icons: {
+    icon: "/favicon.ico", // 또는 PNG 등 경로
+  },
 };
 
 export default function RootLayout({
@@ -15,13 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="ko">
-        <body className="bg-black text-white">
-          <Navbar />
-          <DustCanvas />
-              {children}
-          <Footer />
-        </body>
-      </html>
+    <html lang="ko">
+      <body className="bg-black text-white">
+        <Navbar />
+        <DustCanvas />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
