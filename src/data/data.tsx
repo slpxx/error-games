@@ -10,7 +10,7 @@ export const gameList: Game[] = [
     {
         id: 'NyanNyanPo',
         title: '냥냥포',
-        image: '/image/NyanNyanPo.png',
+        image: '/image/MeowPow.png',
         appStore: null,
         playStore: 'https://play.google.com/store/apps/details?id=com.error.grandma&hl=ko',
     },
