@@ -8,13 +8,6 @@ export type Game = {
 
 export const gameList: Game[] = [
     {
-        id: 'NyanNyanPo',
-        title: '냥냥포',
-        image: '/image/MeowPow.png',
-        appStore: null,
-        playStore: 'https://play.google.com/store/apps/details?id=com.error.grandma&hl=ko',
-    },
-    {
         id: 'DungeonPool',
         title: '출시 예정',
         image: '/image/DungeonPool.png',

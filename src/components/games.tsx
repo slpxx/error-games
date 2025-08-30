@@ -11,8 +11,6 @@ export default function Games({ games }: GamesProps) {
         <section id="games" className="min-h-screen flex flex-col items-center justify-center">
             <FadeIn>
                 <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">GAMES</h2>
-
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10">
                         {games.map((game, i) => (
                             <div

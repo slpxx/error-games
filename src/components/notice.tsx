@@ -9,7 +9,6 @@ export default function Notice() {
     >
       <FadeIn>
         <div className="max-w-4xl w-full px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">NOTICE</h2>
           <div className="flex flex-col md:flex-row gap-10 justify-center items-center max-w-4xl mx-auto">
             {/* X Card */}
             <a
