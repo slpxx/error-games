@@ -27,19 +27,13 @@ const Navbar = () => {
         {/* 메뉴 */}
         <div className="space-x-6 hidden md:flex text-sm font-medium">
           <button
-            className="hover:cursor-pointer font-bold"
-            onClick={() => scrollToSection("about")}
-          >
-            ABOUT
-          </button>
-          <button
-            className="hover:cursor-pointer font-bold"
+            className="nav-link hover:cursor-pointer font-bold transition duration-200 hover:text-neutral-200"
             onClick={() => scrollToSection("games")}
           >
             GAMES
           </button>
           <button
-            className="hover:cursor-pointer font-bold"
+            className="nav-link hover:cursor-pointer font-bold transition duration-200 hover:text-neutral-200"
             onClick={() => scrollToSection("notice")}
           >
             NOTICE

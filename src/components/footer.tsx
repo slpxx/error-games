@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="m-20 space-y-10">
+    <footer className="mx-8 my-12 space-y-8 sm:mx-20">
       <div className="flex flex-col items-center justify-center text-center space-y-1">
         <p className="font-bold text-lg mb-2">ERROR Co.,Ltd.</p>
         <p className="text-sm">대표: 심영우</p>

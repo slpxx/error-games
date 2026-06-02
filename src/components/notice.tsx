@@ -5,7 +5,7 @@ export default function Notice() {
   return (
     <section
       id="notice"
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="flex flex-col justify-center items-center py-16 sm:py-20"
     >
       <FadeIn>
         <div className="max-w-4xl w-full px-6 text-center">
@@ -13,14 +13,15 @@ export default function Notice() {
             {/* X Card */}
             <a
               href="https://x.com/_ErrorGames_"
-              className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
+              className="group card-fade-up relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block transition duration-300 ease-out hover:-translate-y-2 hover:bg-[#303030] hover:shadow-[0_16px_40px_rgba(255,255,255,0.10)]"
+              style={{ animationDelay: "80ms" }}
             >
               <Image
                 src="/icons/X_logo.png"
                 alt="X Logo"
                 width={32}
                 height={32}
-                className="absolute top-6 left-6"
+                className="absolute top-6 left-6 transition duration-300 group-hover:scale-110"
                 priority
               />
 
@@ -35,14 +36,15 @@ export default function Notice() {
             {/* Instagram Card */}
             <a
               href="https://www.instagram.com/errorgamescom/"
-              className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
+              className="group card-fade-up relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block transition duration-300 ease-out hover:-translate-y-2 hover:bg-[#303030] hover:shadow-[0_16px_40px_rgba(255,255,255,0.10)]"
+              style={{ animationDelay: "180ms" }}
             >
               <Image
                 src="/icons/Instagram_logo.png"
                 alt="X Logo"
                 width={32}
                 height={32}
-                className="absolute top-6 left-6"
+                className="absolute top-6 left-6 transition duration-300 group-hover:scale-110"
                 priority
               />
 
@@ -57,14 +59,15 @@ export default function Notice() {
             {/* Youtube Card */}
             <a
               href="https://www.youtube.com/@errorgames403"
-              className="group relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block"
+              className="group card-fade-up relative w-80 h-52 bg-[#2a2a2a] rounded-lg p-6 pt-16 block transition duration-300 ease-out hover:-translate-y-2 hover:bg-[#303030] hover:shadow-[0_16px_40px_rgba(255,255,255,0.10)]"
+              style={{ animationDelay: "280ms" }}
             >
               <Image
                 src="/icons/YouTube_logo.png"
                 alt="X Logo"
                 width={32}
                 height={32}
-                className="absolute top-6 left-6"
+                className="absolute top-6 left-6 transition duration-300 group-hover:scale-110"
                 priority
               />
 

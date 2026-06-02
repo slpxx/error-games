@@ -10,7 +10,7 @@ export type Game = {
 export const gameList: Game[] = [
     {
         id: 'Blood',
-        title: 'Blood',
+        title: 'Blood!',
         status: '출시예정',
         image: '/image/blooder-app-icon-final-512.png',
         appStore: null,

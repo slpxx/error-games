@@ -8,24 +8,25 @@ type GamesProps = {
 
 export default function Games({ games }: GamesProps) {
     return (
-        <section id="games" className="min-h-screen flex flex-col items-center justify-center">
+        <section id="games" className="flex flex-col items-center justify-start pt-8 pb-20 sm:pt-10 sm:pb-24">
             <FadeIn>
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10">
                         {games.map((game, i) => (
                             <div
                                 key={i}
-                                className="flex flex-col items-center text-center"
+                                className="group/card card-fade-up flex flex-col items-center text-center"
+                                style={{ animationDelay: `${i * 120}ms` }}
                             >
                                 <div
-                                    className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-xl overflow-hidden shadow-md group"
+                                    className="soft-float relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-xl overflow-hidden shadow-md transition duration-300 ease-out group-hover/card:shadow-[0_14px_35px_rgba(255,255,255,0.12)] group"
                                 >
                                     {/* 이미지 */}
                                     <Image
                                         src={game.image}
                                         alt={game.title}
                                         fill
-                                        className="object-cover transition duration-300"
+                                        className="object-cover transition duration-500 ease-out group-hover/card:scale-105 group-hover/card:rotate-[0.5deg]"
                                     />
 
                                     {/* 어두운 배경 레이어 */}
@@ -78,10 +79,12 @@ export default function Games({ games }: GamesProps) {
                                         )}
                                     </div>
                                 </div>
-                                <div className="mt-3 min-h-10">
-                                    <p className="text-sm sm:text-base font-bold leading-tight">{game.title}</p>
+                                <div className="mt-5 min-h-12 transition duration-300 ease-out group-hover/card:-translate-y-1">
+                                    <p className="text-base sm:text-lg font-bold leading-tight text-white transition duration-300 group-hover/card:text-neutral-100">
+                                        {game.title}
+                                    </p>
                                     {game.status && (
-                                        <p className="mt-1 text-xs sm:text-sm text-neutral-500 leading-tight">{game.status}</p>
+                                        <p className="mt-1.5 text-xs sm:text-sm font-medium text-neutral-500 leading-tight transition duration-300 group-hover/card:text-neutral-300">{game.status}</p>
                                     )}
                                 </div>
                             </div>

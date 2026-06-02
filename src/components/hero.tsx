@@ -9,11 +9,11 @@ export default function Hero({ title1, title2 }: HeroProps) {
     return (
         <section
             id="hero"
-            className="min-h-screen flex flex-col items-center justify-center"
+            className="min-h-[38vh] flex flex-col items-center justify-start pt-24 pb-10 sm:pt-28 sm:pb-12"
         >
             <FadeIn>
                 <div className="flex flex-col items-center justify-center">
-                    <div className="max-2xl text-center text-3xl font-bold mb-6">
+                    <div className="max-2xl text-center text-3xl font-bold mb-6 text-glow-pulse">
                         <h2>
                             {title1}
                         </h2>
