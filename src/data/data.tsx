@@ -1,6 +1,7 @@
 export type Game = {
     id: string;
     title: string;
+    status?: string;
     image: string;
     appStore: string | null;
     playStore: string | null;
@@ -8,9 +9,10 @@ export type Game = {
 
 export const gameList: Game[] = [
     {
-        id: 'DungeonPool',
-        title: '출시 예정',
-        image: '/image/DungeonPool.png',
+        id: 'Blood',
+        title: 'Blood',
+        status: '출시예정',
+        image: '/image/blooder-app-icon-final-512.png',
         appStore: null,
         playStore: null,
     },

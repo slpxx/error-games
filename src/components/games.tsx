@@ -78,7 +78,12 @@ export default function Games({ games }: GamesProps) {
                                         )}
                                     </div>
                                 </div>
-                                <p className="mt-3 text-sm sm:text-base font-bold">{game.title}</p>
+                                <div className="mt-3 min-h-10">
+                                    <p className="text-sm sm:text-base font-bold leading-tight">{game.title}</p>
+                                    {game.status && (
+                                        <p className="mt-1 text-xs sm:text-sm text-neutral-500 leading-tight">{game.status}</p>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
