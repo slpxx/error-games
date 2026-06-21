@@ -11,10 +11,10 @@ export const gameList: Game[] = [
     {
         id: 'Blood',
         title: 'Blood!',
-        status: '출시예정',
+        // status: '출시예정',
         image: '/image/blooder-app-icon-final-512.png',
-        appStore: null,
-        playStore: null,
+        appStore: 'https://apps.apple.com/kr/app/blood/id6749922843',
+        playStore: 'https://play.google.com/store/apps/details?id=com.error.blooder',
     },
 ];
 
