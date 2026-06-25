@@ -1,11 +1,24 @@
-//import Link from "next/link";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="mx-8 my-12 space-y-8 sm:mx-20">
       <div className="flex flex-col items-center justify-center text-center space-y-1">
         <p className="font-bold text-lg mb-2">ERROR Co.,Ltd.</p>
-        <p className="text-sm">대표: 심영우</p>
+        <p className="text-sm">
+          대표:{" "}
+          <Link
+            href="/admin"
+            aria-label="관리자 페이지"
+            style={{
+              color: "inherit",
+              cursor: "auto",
+              textDecoration: "none",
+            }}
+          >
+            심영우
+          </Link>
+        </p>
         <p className="text-sm">사업자 등록번호: 403-81-85298</p>
         <p className="text-sm">
           50113 경상남도 거창군 웅양면 노현리 210-2 (주식회사 이알알오알)
