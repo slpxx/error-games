@@ -125,3 +125,10 @@ body {
     opacity: 1;
   }
 }
+
+@media (hover: none), (pointer: coarse) {
+  .store-links-dim,
+  .store-links-overlay {
+    display: none !important;
+  }
+}

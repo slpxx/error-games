@@ -1,6 +1,7 @@
 export type Game = {
     id: string;
     title: string;
+    hideTitle?: boolean;
     status?: string;
     image: string;
     appStore: string | null;
@@ -10,11 +11,20 @@ export type Game = {
 export const gameList: Game[] = [
     {
         id: 'Blood',
-        title: 'Blood!',
+        title: '블러드!',
         // status: '출시예정',
         image: '/image/blooder-app-icon-final-512.png',
         appStore: 'https://apps.apple.com/kr/app/blood/id6749922843',
         playStore: 'https://play.google.com/store/apps/details?id=com.error.blooder',
+    },
+    {
+        id: 'DungeonPool',
+        title: 'DungeonPool',
+        hideTitle: true,
+        status: '출시 예정',
+        image: '/image/DungeonPool.png',
+        appStore: null,
+        playStore: null,
     },
 ];
 
