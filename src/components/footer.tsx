@@ -20,9 +20,6 @@ export default function Footer() {
           </Link>
         </p>
         <p className="text-sm">사업자 등록번호: 403-81-85298</p>
-        <p className="text-sm">
-          50113 경상남도 거창군 웅양면 노현리 210-2 (주식회사 이알알오알)
-        </p>
       </div>
       <div className="flex flex-col items-center justify-center text-center space-y-1 text-yellow-300">
         <a
@@ -41,7 +38,6 @@ export default function Footer() {
         >
           개인정보처리방침
         </a>
-        <p className="font-bold text-sm">개발자 연락처: +82 10 5404 5303</p>
         <p className="font-bold text-sm">
           문의:
           <a
